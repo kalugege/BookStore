@@ -1,0 +1,113 @@
+.shopping_cart {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 3rem auto;
+    padding-bottom: 3rem;
+    background-color: rgba($color: #ffffff, $alpha: 0.93);
+    min-height: 70rem;
+    box-shadow: 0 0 10px rgba($color: rgb(0, 0, 0), $alpha: 0.2),
+        0 3px 10px rgba($color: #000000, $alpha: 0.1);
+    .title {
+        display: block;
+        width: 97%;
+        color: rgba($color: #000000, $alpha: 0.8);
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        padding: 1rem;
+        margin: 1rem auto;
+        text-align: left;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.8);
+    }
+    .total {
+        display: block;
+
+        width: 97%;
+        color: rgba($color: #000000, $alpha: 0.8);
+        font-size: 2rem;
+        font-family: 'Avenir', sans-serif;
+        padding: 1rem;
+        margin: 0 auto 2rem;
+        text-align: left;
+        span {
+            margin-right: 2rem;
+        }
+        &__price {
+            font-weight: 700;
+            font-family: 'Lato', sans-serif;
+        }
+    }
+}
+
+.cart_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 97%;
+    margin: 1rem auto;
+    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+    &__img {
+        width: 16rem;
+    }
+    &__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 40rem;
+        height: 15rem;
+        font-size: 2rem;
+        padding: 1rem 3rem;
+    }
+    &__price,
+    &__remove {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15rem;
+        height: 15rem;
+        font-size: 2rem;
+        padding: 0 2rem;
+        .removeBtn {
+            font-size: 1.7rem;
+            font-family: 'Roboto', sans-serif;
+            border: 1px solid $blue;
+            background-color: rgba($color: $red, $alpha: 0.3);
+            padding: 1rem 2rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                color: white;
+                background-color: rgba($color: $red, $alpha: 0.8);
+            }
+        }
+    }
+}
+
+.emptyCart {
+    display: flex;
+    align-items: center;
+    width: 97%;
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    color: white;
+    border: 1px solid rgba($color: $red, $alpha: 0.7);
+    background-color: rgba($color: $red, $alpha: 0.5);
+    border-radius: 5px;
+    font-size: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.backToShop {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    padding: 1rem 1.5rem;
+    transition: 0.5s;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: rgba($color: $blue, $alpha: 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}

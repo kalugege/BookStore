@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+
+
+
+{% for book in books %}
+<div class="card">
+
+  
+    
+   <h2>{{book.name}}</h2>
+   <p>{{book.genre}}</p>
+   <p>{{book.author}}</p>
+   <p><i>{{book.description}}</i></p>
+   <p>{{book.price}} rsd</p>
+
+
+
+</div>
+{% endfor%}    
+   
+{% endblock %}   

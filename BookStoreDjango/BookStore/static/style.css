@@ -1,0 +1,13 @@
+ 
+.card {
+    margin-top:10px;
+    margin-left: 35%;
+    right: 100px;
+    border: 1px solid red;
+    width: 30rem;
+    background-color: rgba(242, 214, 208);
+}
+
+i {
+    color:rgb(100, 92, 92);
+}

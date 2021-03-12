@@ -1,0 +1,17 @@
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $purple;
+    background: #efefef;
+    background-size: cover;
+}
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    @media all and (max-width: 900px) {
+        padding: 2rem;
+    }
+}
